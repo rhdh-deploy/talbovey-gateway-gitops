@@ -1,0 +1,15 @@
+app:
+  name: talbovey-poi-gateway-app
+  namespace: talbovey
+  cluster: .apps.a1jxqhzp.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-deploy/talbovey-gateway
+  org: rhdh-deploy
+  name: talbovey-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: talbovey/poi-gateway-app
+  tag: latest
